@@ -19,7 +19,7 @@ if page == "Home":
     st.header("Welcome to the News App")
     st.write("All the news at the tip of your hands ✨.")
     # Add image to the home page
-    st.image("home.jpeg")
+    # st.image("home.jpeg")
     
 elif page == "Get News":
     st.header("Get the Latest News")
