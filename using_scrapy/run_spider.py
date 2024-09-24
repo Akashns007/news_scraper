@@ -16,7 +16,7 @@ def run_spider():
 
     # Run the spider in a separate process to avoid ReactorNotRestartable error
     try:
-        subprocess.run(["scrapy", "runspider", "news.py", "-o", temp_file, "-t", "json"], check=True)
+        subprocess.run(["scrapy", "crawl", "news", "-o", "temp_latest_news.json", "-t", "json"])
     except subprocess.CalledProcessError as e:
         print(f"Error running Scrapy spider: {e}")
         return  # Exit the function if the spider fails
